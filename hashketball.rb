@@ -1,4 +1,19 @@
-# Write your code below game_hash
+require 'pry';
+
+
+
+
+def num_points_scored
+  game_hash.each do |home, home_info|
+    binding.pry
+    home_info.each do |players, player_info|
+      player_info.each do |points, points_value|
+        puts points_value;
+      end
+    end
+  end
+end
+
 def game_hash
   {
     home: {
